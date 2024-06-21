@@ -1,0 +1,159 @@
+/* this arranges the img and the text side by side  */
+.aboutContainer{
+    background-color:rgb(22,22,23);
+    display:flex ;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    height:900px;
+    flex-wrap: wrap;
+    color: white;
+    padding-top: 50px;
+}
+/* this adjust the image size */
+.aboutImgContainer{
+    width: 400px;
+    height: 500px;
+
+   
+}
+/* this is very important as it fits the image into the width an height above  */
+.aboutImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+/* this adjust the text size */
+.aboutContainer .aboutText{
+    width: 500px;
+    margin-top:20px ; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*  first text  */
+.aboutText1{
+    font-size: 25px;
+}
+/* second text (Name) */
+.aboutText2{
+    font-size:28px;
+   color: red;
+    padding: 5px;
+    /* width: 250px; */
+    font-weight: bold;
+
+}
+
+/* about button  */
+.aboutButton2{
+    width: 180px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    margin: 5px;
+    font-weight: bolder;
+    color: rgb(216, 16, 16);
+    cursor: pointer;
+}
+.aboutButton{
+    width: 180px;
+    height: 50px;
+    border-radius: 20px;
+    background-color:transparent;
+    border: 1px solid red;
+    margin: 5px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+
+}
+/*  targets the bio subheading */
+.aboutText h3{
+ margin-top: 25px;
+}
+.aboutBio{
+   line-height: 40px;
+   margin-top: 10px;
+   margin-bottom: 30px;
+   color: red;
+   opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+@media   (max-width:348px){
+   /* main container but this just for the height  */
+    .aboutContainer{
+       
+        height: 1600px;
+    
+    }
+   
+   
+    /* this targets the image in the above sceen size */
+    .aboutImgContainer{
+        width: 320px;
+        height: 380px;
+        margin-top: 20px;
+        padding:0 10px ;
+       
+    }
+    /* this is very important as it fits the image into the width an height above  */
+    .aboutImg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      
+    }
+    /*padding for the text so it shift a bit from the wall */
+    .aboutContainer .aboutText{
+    padding:0 8px ;
+    box-sizing: border-box;
+    }
+}
+
+
+@media (min-width: 349px) and (max-width: 700px){
+    .aboutContainer{
+       
+        height: 1300px;
+    
+    }
+    .aboutImgContainer{
+        width: 400px;
+        height: 430px;
+        margin-top: 20px;
+        padding:0 10px ;
+       
+    }
+
+    .aboutContainer .aboutText{
+    padding:0 10px ;
+    box-sizing: border-box;
+    }
+}
+@media (min-width:701px){
+    /* main container but this just for the height  */
+     .aboutContainer{
+        
+         height: 1300px;
+     
+     }
+    }
+    @media (min-width:900px){
+        /* main container but this just for the height  */
+         .aboutContainer{
+            /* gap: 5px; */
+             height: 900px;
+        
+         
+         }
+        }
+    

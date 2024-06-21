@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* the full hero background  */
+.container{
+    width: 100%;
+    height: 800px;
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding-top:250px;
+    position:relative;
+   
+}
+/* the hero background first paragraph */
+.container  .para1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight:lighter;
+    padding-bottom: 30px;
+  
+}
+/* the hero background second paragraph */
+.container .para2{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 55px;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+.container .para2 span{
+    color: red;
+}
+/* the hero background social media icons */
+.socialMediaIcons li{
+   font-size: 30px;
+   list-style: none;
+   display: inline-block;
+   width: 35px;
+   transition: ease-out 0.5s; 
+    color:rgb(34,34,34);
+    margin-bottom: 30px;
+    
+}
+.socialMediaIcons li:hover{
+    color: red;
+    transition: ease-in 0.3s;
+    font-size: 25px;
+}
+/* styling for herobox  */
+/* .img{
+height: 700px;
+width: 300px;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1000;
+margin: 100px;
+margin-right:  100px;
+} */
+
+
+
+
+@media (max-width:360px){
+   
+    .container{
+       
+        height:900px;
+        
+    }
+}
