@@ -3,24 +3,23 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.active{
-    color: rgb(255, 0, 0);
-}
-nav{
+
+.navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    background-color: black;   
-    background-color:rgb(34,34,34);
+    /* background-color: black;    */
+    background-color:rgb(7, 7, 7);
     height: 120px;
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1000;
 }
+
 /* nav title */
-nav .title{
+.navbar .title{
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     font-weight: bold;
@@ -29,7 +28,7 @@ nav .title{
 
     /* nav list items   */
 }
- nav ul li {
+ .navbar ul li {
    display:inline-block;
    justify-content: space-around;
    margin:0 30px;
@@ -39,29 +38,24 @@ nav .title{
    flex-wrap:wrap ;
 }
 nav ul li:hover{
-    color: red;
+    /* color: red; */
+    border:2px solid  rgb(216, 16, 16);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(216, 16, 16);
 }
 
-/* nav home link*/
-.homebutton{
-    color: red;
-    
- }
- /* hover for nav home link */
- .homebutton:hover{
-    color: white;
- }
 
 
 
 
 @media (max-width:360px){
-    nav{
+    .navbar{
         height: 260px;
         width: 100%;
     
     }
-    nav ul li {
+    .navbar ul li {
         margin-bottom: 30px;
     
     }

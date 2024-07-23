@@ -37,6 +37,8 @@
     font-size: 18px;
 }
 
+
+
 .input{
     width: 400px;
     height: 60px;
@@ -44,15 +46,21 @@
     border: none;
     margin-bottom: 30px;
     opacity: 0.7;
+    padding-left:10px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 /* targets the message input */
 .input4{
-    width: 500px;
-    height: 180px;
+    width: 400px;
+    height: 150px;
     border-radius: 20px;
     border: none;
-    margin-bottom: 30px;
+    padding-bottom: 90px;
     opacity: 0.7;
+    padding-left:10px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
 }
 /* targets the inputs placeholder */
 .input::placeholder{
@@ -73,7 +81,7 @@
     border-radius: 20px;
     background-color:transparent;
     border: 1px solid red;
-    margin: 5px;
+    margin-top: 15px;
     font-weight: bolder;
     color: white;
     cursor: pointer;

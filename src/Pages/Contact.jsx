@@ -1,8 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../Styling/Contact.css"
 
 
 const Contact = () => {
+const [data,setData] = useState({
+  FullName:"",
+  Email:"",
+  Subject:"",
+  Message:""
+})
+
+const handleInput = (e)=>{
+  const value = e.target.value;
+  setData(value);
+}
+
+const handleSubmit = (e) =>{
+  e.preventDefault();
+
+  // console.log ("form submited")
+}
+  
   return (
     
     
@@ -26,30 +44,34 @@ const Contact = () => {
 
          
           {/*  input div */}
-          <div className='contactInputs'>
+          <form className='contactInputs'>
             
             {/* input 1 */}
             <div>
-               <input type="text" placeholder='Full Name' className='input'/>
+        
+               <input type="text" placeholder='Full Name' value={data.FullName} onChange={handleInput} className='input'/>
             </div>
 
           {/* input 2*/}
             <div>
-               <input type="text"  placeholder='Email'  className='input'/>
+        
+               <input type="text"  placeholder='Email' value={data.Email} onChange={handleInput} className='input'/>
             </div>
            
            {/* input 3*/}
            <div>
-               <input type="text"  placeholder='Subject' className='input'/>
+           
+               <input type="text"  placeholder='Subject'value={data.Subject} onChange={handleInput} className='input'/>
             </div>
 
           {/* input 4*/}
           <div>
-               <input type="text" placeholder='Message' className='input4'/>
+          
+               <input type="text" placeholder='Message'value={data.Message} onChange={handleInput} className='input4'/>
             </div>
 
-            <button className='contactButton'>Send Message</button>
-          </div>
+            <button type='submit' className='contactButton' onSubmit={handleSubmit}>Send Message</button>
+          </form>
           {/* end of input div  */}
 
 </div>

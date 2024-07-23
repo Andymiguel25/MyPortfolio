@@ -1,6 +1,10 @@
 import React from 'react'
 import "../Styling/Portfolio.css"
 import {Link} from "react-router-dom"
+import img4 from "../assets/crystalMove.jpg"
+import img2 from "../assets/bateria.jpg"
+import img3 from "../assets/medcenter.jpg"
+
 
 const Portfolio = () => {
   return (
@@ -15,16 +19,15 @@ const Portfolio = () => {
              <Link><h3 className='List4'>AUTOMOBILE</h3></Link> 
       </div>
 
-
-
-
-
-{/*  My Work */}
-      <div>
-      <Link><img src="" alt="" /></Link>
-      <Link></Link>
-      <Link></Link>
-      <Link></Link>
+      
+      
+      {/*  My Work */}
+      <div className='portfolioGrid'>
+      <Link to='http://127.0.0.1:5502/index.html'> <img src={img3}  alt=""  className='portfolioImg'/></Link>
+      <Link to='http://127.0.0.1:5503/index.html'> <img src={img4} alt=""  className='portfolioImg'/></Link>
+      <Link>  <img src={img2} alt=""  className='portfolioImg'/></Link>
+      <Link> <img src={img4} alt=""  className='portfolioImg'/></Link>
+  
       </div>
     </div>
   )

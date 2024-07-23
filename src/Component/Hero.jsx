@@ -3,8 +3,8 @@ import "../Styling/Hero.css"
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import img from '../assets/andyimg.png'
 import { Link } from 'react-router-dom';
+import img3 from "../assets/andy2.png"
 
 const Hero = () => {
   return (
@@ -12,10 +12,9 @@ const Hero = () => {
     
 
     <div >
-        {/* img for herobox
-       <img src={img} alt="" className='img'/>  */}
+  
         <div className='container'> 
-        
+        <div className='containerParaAndIcons'>
             <p className='para1'>Welcome to my Page!</p>
             <p className='para2'>I am a <span>Front-End Developer</span></p>
            
@@ -28,16 +27,17 @@ const Hero = () => {
                 
                 </ul>
             </div>
+           </div> 
+             {/* img for herobox*/}
+    
+          <img src={img3} alt=""  className='heroImg'/>
+     
+
+           
+           
         </div>
 
-        {/* // <>
-    // <div className='heroContainer'>
-    // <div>
-    //     <img src={img} alt="" className='heroImg' />
-    // </div>
-
-    // </div>
-    // </> */}
+      
     </div>
   )
 }
