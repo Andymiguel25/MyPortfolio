@@ -23,8 +23,8 @@ const Portfolio = () => {
       
       {/*  My Work */}
       <div className='portfolioGrid'>
-      <Link to='http://127.0.0.1:5502/index.html'> <img src={img3}  alt=""  className='portfolioImg'/></Link>
-      <Link to='http://127.0.0.1:5503/index.html'> <img src={img4} alt=""  className='portfolioImg'/></Link>
+      <Link to='https://med-center-eight.vercel.app/'> <img src={img3}  alt=""  className='portfolioImg'/></Link>
+      <Link to='https://crystal-move.vercel.app/'> <img src={img4} alt=""  className='portfolioImg'/></Link>
       <Link>  <img src={img2} alt=""  className='portfolioImg'/></Link>
       <Link> <img src={img4} alt=""  className='portfolioImg'/></Link>
   
